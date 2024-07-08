@@ -1,0 +1,68 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #DCDCDC;
+}
+
+.content {
+    padding: 1rem;
+    background-color: #fff;
+    height: 100vh;
+}
+
+
+
+/* Media Query */
+
+@media screen and (min-width: 425px) {
+    .content {
+        max-width: 425px;
+        margin: 0 auto;
+    }
+
+    .pokemons {
+        grid-template-columns: 1fr 1fr;
+    }
+
+  }
+
+@media screen and (min-width: 768px) {
+    .content {
+        max-width: 768px;
+        margin: 0 auto;
+    }
+
+    .pokemons {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+  }
+
+@media screen and (min-width: 992px) {
+    .content {
+        max-width: 992px;
+        margin: 2rem auto;
+        height: auto;
+        border-radius: 1rem;
+    }
+
+    .pokemons {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+  
+  @media screen and (min-width: 1440px) {
+    .content {
+        max-width: 1440px;
+        margin: 2rem auto;
+        height: auto;
+        border-radius: 1rem;
+    }
+
+    .pokemons {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+  }
